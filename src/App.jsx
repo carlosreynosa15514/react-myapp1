@@ -1,8 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import Saludo from "./components/Saludo";
 
-import Boton1 from "./components/Boton1"
+//* Componentes
+import Saludo from "./components/Saludo";
+import Boton1 from "./components/Botton1/Boton1";
+import GetUserName from "./components/GetUserName";
 
 //! Atributo class es className
 //! Todo esta dentro de un div
@@ -12,34 +14,15 @@ import Boton1 from "./components/Boton1"
 
 function App() {
 
-  //* Ejemplo para pasar un valor al html
-  //* Dentro del HTML en codigo Js se escribe entre {}
-  function getUserName(){
-    return "Mark Jasper";
-  }
-
   return (
     <div className="App">
       <header className="App-header">
-        <h1>
-          Este es un H1 creado desde index.js
-        </h1>
-        <img src={logo} className="App-logo" alt="logo" />
-        <Saludo/>
-        <Boton1/>
-        <div> Usuario:  <u> {getUserName()} </u> </div>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-
-          Learn React
-        </a>
+        <Saludo numero = {1854} text="Hola Coder House desde Saludo Componente"/>
+        <Boton1  text="Ver Categorias" />
+        <Boton1 disabled={true} />
+        {/* Tambien se puede pasar un componente con 2 tags, será un children
+        y se recibe como prop.children en el componente  */}
+        <Boton1> Y soy un Children </Boton1>
       </header>
     </div>
   );
