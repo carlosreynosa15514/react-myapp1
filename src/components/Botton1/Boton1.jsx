@@ -1,12 +1,26 @@
-import "./Boton1.css"
+import "./Boton1.css";
+import {useState, useEffects} from "react";
 
-export function handleClick(){
-    alert("Clickeaste");
-  }
+//* Funciones externas a la funcion del componente
 
+//* Funcion del Componente
 export default function Boton1(props) {
+    //* Variables externas al return
+    let [color, setColor] = useState("black");
+
+    //* Funcionaes externas al return
+    function changeColor(){
+        alert("Clickeaste");
+        if (color === "black"){
+            setColor("blue")
+        }else{
+            setColor("black")
+        }
+    }
+
+    //* Funcion principal
     return (
-        <button disabled={props.disabled} className="btn" onClick={handleClick} >
+        <button onClick={changeColor} style={ {backgroundColor: color} }   disabled={props.disabled} className="btn">
             {props.text || "Sin Texto"} 
             {props.children}
         </button>
