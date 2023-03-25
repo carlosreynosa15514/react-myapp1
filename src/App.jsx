@@ -3,14 +3,14 @@ import './App.css';
 
 // * Componentes
 import Saludo from "./components/Saludo";
-import ItemList from "./components/ItemList/ItemList";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 
 function App() {
 
     return (
         <div>
             <Saludo text = "Bienvenido a Tienda de Construccion"/>
-            <ItemList/>
+            <ItemListContainer/>
         </div>
     );
 }

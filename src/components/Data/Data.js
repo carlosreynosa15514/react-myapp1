@@ -5,7 +5,7 @@ const productos = [
         "id": 1,
         "titulo": "960",
         "precio": 3853,
-        "descripcion": "Volvo",
+        "category": "Volvo",
         "img": "http://dummyimage.com/250x250.png/cc0000/ffffff",
         "stock": 0
     },
@@ -14,7 +14,7 @@ const productos = [
         "id": 2,
         "titulo": "GT",
         "precio": 5980,
-        "descripcion": "Ford",
+        "category": "Ford",
         "img": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
         "stock": 9
     },
@@ -23,7 +23,7 @@ const productos = [
         "id": 3,
         "titulo": "645",
         "precio": 4016,
-        "descripcion": "BMW",
+        "category": "BMW",
         "img": "http://dummyimage.com/250x250.png/cc0000/ffffff",
         "stock": 11
     },
@@ -32,7 +32,7 @@ const productos = [
         "id": 4,
         "titulo": "Corolla",
         "precio": 1901,
-        "descripcion": "Toyota",
+        "category": "Toyota",
         "img": "http://dummyimage.com/250x250.png/cc0000/ffffff",
         "stock": 11
     }, {
@@ -40,7 +40,7 @@ const productos = [
         "id": 5,
         "titulo": "Coupe GT",
         "precio": 5657,
-        "descripcion": "Audi",
+        "category": "Audi",
         "img": "http://dummyimage.com/250x250.png/ff4444/ffffff",
         "stock": 0
     }, {
@@ -48,7 +48,7 @@ const productos = [
         "id": 6,
         "titulo": "Mirage",
         "precio": 4139,
-        "descripcion": "Mitsubishi",
+        "category": "Mitsubishi",
         "img": "http://dummyimage.com/250x250.png/ff4444/ffffff",
         "stock": 11
     }, {
@@ -56,7 +56,7 @@ const productos = [
         "id": 7,
         "titulo": "Bronco II",
         "precio": 3949,
-        "descripcion": "Ford",
+        "category": "Ford",
         "img": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
         "stock": 12
     }, {
@@ -64,7 +64,7 @@ const productos = [
         "id": 8,
         "titulo": "G37",
         "precio": 5441,
-        "descripcion": "Infiniti",
+        "category": "Infiniti",
         "img": "http://dummyimage.com/250x250.png/cc0000/ffffff",
         "stock": 12
     }, {
@@ -72,7 +72,7 @@ const productos = [
         "id": 9,
         "titulo": "Crown Victoria",
         "precio": 2987,
-        "descripcion": "Ford",
+        "category": "Ford",
         "img": "http://dummyimage.com/250x250.png/ff4444/ffffff",
         "stock": 3
     }, {
@@ -80,7 +80,7 @@ const productos = [
         "id": 10,
         "titulo": "Firefly",
         "precio": 5230,
-        "descripcion": "Pontiac",
+        "category": "Pontiac",
         "img": "http://dummyimage.com/250x250.png/ff4444/ffffff",
         "stock": 8
     }, {
@@ -88,7 +88,7 @@ const productos = [
         "id": 11,
         "titulo": "Express 3500",
         "precio": 5784,
-        "descripcion": "Chevrolet",
+        "category": "Chevrolet",
         "img": "http://dummyimage.com/250x250.png/cc0000/ffffff",
         "stock": 11
     }, {
@@ -96,7 +96,7 @@ const productos = [
         "id": 12,
         "titulo": "Dakota",
         "precio": 5585,
-        "descripcion": "Dodge",
+        "category": "Dodge",
         "img": "http://dummyimage.com/250x250.png/dddddd/000000",
         "stock": 8
     }, {
@@ -104,7 +104,7 @@ const productos = [
         "id": 13,
         "titulo": "Civic",
         "precio": 2022,
-        "descripcion": "Honda",
+        "category": "Honda",
         "img": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
         "stock": 3
     }, {
@@ -112,7 +112,7 @@ const productos = [
         "id": 14,
         "titulo": "Colorado",
         "precio": 5669,
-        "descripcion": "Chevrolet",
+        "category": "Chevrolet",
         "img": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
         "stock": 3
     }, {
@@ -120,7 +120,7 @@ const productos = [
         "id": 15,
         "titulo": "Galant",
         "precio": 2304,
-        "descripcion": "Mitsubishi",
+        "category": "Mitsubishi",
         "img": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
         "stock": 5
     }

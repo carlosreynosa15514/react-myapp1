@@ -7,25 +7,23 @@ import "./Item.css";
 export default function Item(props) {
     const [fav, setFav] = useState(false);
     const [color, setColor] = useState("white");
+    const [classNameFavorite, setClasNameFavorite] = useState("item-card-favicon")
+
 
     console.log("Soy Favorito? ", fav);
+
     function handleFavorite() {
         if (fav === true){
             setFav(false);
             setColor("red");
+            setClasNameFavorite("item-card-favicon favorite")
         }else {
             setFav(true);
             setColor("white");
+            setClasNameFavorite("item-card-favicon")
         }
     }
-
-    let classNameFavorite = "";
-    if (fav === true){
-        classNameFavorite = "item-card-favicon favorite";
-    }else {
-        classNameFavorite = "item-card-favicon";
-    }
-
+  
     return (
         //* Card de cada Item
         <div className="item-card">
