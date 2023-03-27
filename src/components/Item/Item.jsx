@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ItemCount from "../ItemCount/ItemCount";
+import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer";
 import "./Item.css";
 
 //* Esta funcion despliega cada Card
@@ -47,6 +48,9 @@ export default function Item(props) {
                 <h4>{props.precio}</h4>
                 <small>{props.descripcion}</small>
             </div>
+
+            {/* Boton para Ver Detalles */}
+            <button onClick={<ItemDetailContainer/>}>Ver Detalle</button>
 
             { /*Botones de Suma-Resta al carrito de la Card ********************/}
             <ItemCount className="item-count" stock={props.stock}/>

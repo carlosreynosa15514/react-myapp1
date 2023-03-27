@@ -4,13 +4,15 @@ import './App.css';
 // * Componentes
 import Saludo from "./components/Saludo";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
 function App() {
 
     return (
         <div>
             <Saludo text = "Bienvenido a Tienda de Construccion"/>
-            <ItemListContainer/>
+            {/* <ItemListContainer/> */}
+            <ItemDetailContainer/>
         </div>
     );
 }
