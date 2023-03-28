@@ -10,13 +10,13 @@ export default function Navbar(){
                     <Link to = "/">Inicio</Link>
                 </li>
                 <li>
-                    <Link to = "/detalle">Detalle</Link>
+                    <Link to = "/detalle/:id">Detalle</Link>
                 </li>
                 <li>
-                    <Link to = "/prueba">Prueba 404</Link>
+                    <Link to = "/category/:categoryid">Categorias</Link>
                 </li>
                 <li>
-                    <Link to = "https:/www.coderhouse.com">Coder Web</Link>
+                    <a href = "https:/www.coderhouse.com" target={"_blank"}>Coder Web</a>
                 </li>
                 <div>
                     🛒

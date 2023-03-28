@@ -1,5 +1,6 @@
 //* React Imports
 import { useState, useEffect } from "react";
+import {useParams} from "react-router-dom";
 
 //* Components Imports
 
@@ -8,13 +9,18 @@ import productos from "../Data/Data";
 
 //*********************** Mock async Service ********************************* */
 
-function getSingleItem() {
+function getSingleItem(idURL) {
   const promesa = new Promise((resolve, reject)=>{
 
     setTimeout(
       ()=>{
-        resolve(productos[0])
-      }, 2000)
+        const encontrado = productos.find(
+          item => {
+            return (item.id === Number(idURL))
+          }
+        )
+        resolve(encontrado);
+      }, 2000);
   })
   return promesa
 
@@ -22,11 +28,13 @@ function getSingleItem() {
 
 //**************************************************************************** */
 
-export default function ItemDetailContainer() {
+export default function ItemDetailContainer(props) {
   const [product, setProduct] = useState([]);
+  let {id} = useParams();
+  console.log("El id es ", id);
 
   useEffect(() => {
-    getSingleItem().then((respuesta) => {
+    getSingleItem(id).then((respuesta) => {
       console.log("Promesa Cumplida ", respuesta);
       setProduct(respuesta);
       console.log("Aqui products ", product);
